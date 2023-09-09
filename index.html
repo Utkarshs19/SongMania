@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80b6bd296c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="appname">Song Mania</h1>
+    
+    <div class="main container">
+        <h1 id="name" title="Song"></h1>
+        <h3 id="singer" title="Singer"></h3>
+        <div class="img-contain">
+            <img class="" id="image" src="tape.jpg" alt=""> 
+        </div>
+        <div class="dur">
+            <span id="start">0.00</span>
+            <span id="end">2.44</span>
+        </div>
+        <div id="progress" class="progress" >
+            <div id="progress-bar" class="progress-bar" style="width:0%;"></div>
+        </div>
+        <div class="music">
+            <i id="prev" class="fa fa-solid fa-backward" title="previous"></i>
+            <i  id="main-button" class="fa fa-solid fa-play" title="Play"></i>
+            <i id="next" class="fa fa-solid fa-forward" title="next"></i>
+            <audio preload="metadata">
+                <source src="./barish.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div class="volume">
+            <span class="control" id="toggle" ><img class="icon" src="silent.svg" alt="" title="silent"></span>
+            <span class="control" id="plus" title="increase volume">+</span>
+            <span class="control" id="minus" title="decrease volume">-</span>
+        </div>
+      
+      
+       
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
